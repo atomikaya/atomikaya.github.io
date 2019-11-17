@@ -43,6 +43,9 @@ h1, h2 {
 .contact {
   text-align: center;
 }
+  .contact__logo {
+    vertical-align: middle;
+  }
 
 .dev__card, .training__card {
   margin: 2rem 1rem 2rem 0;

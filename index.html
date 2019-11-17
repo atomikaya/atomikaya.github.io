@@ -42,8 +42,10 @@
           src="/assets/sprites/avatar.png"
         />
         <hgroup>
-          <h1>Kaya Thommy</h1>
-          <h2>Formatrice et développeuse web / Symfony</h2>
+          <h1 class="about__name">Kaya Thommy</h1>
+          <h2 class="about__function">
+            Formatrice et développeuse web / Symfony
+          </h2>
         </hgroup>
       </header>
       <p>
@@ -60,11 +62,15 @@
       </p>
     </section>
     <section class="training">
-      <h2>Mon catalogue de formations</h2>
+      <h2 class="training__title">Mon catalogue de formations</h2>
       <ul class="training__list">
         <li>
-          <figure>
-            <img src="/assets/sprites/web.png" alt="Logo web" />
+          <figure class="card training__card">
+            <img
+              alt="Logo web"
+              class="training__logo"
+              src="/assets/sprites/web.png"
+            />
             <figcaption>
               Web front-end : <strong>HTML</strong> / <strong>CSS</strong> /
               <strong>Javascript</strong>
@@ -72,32 +78,48 @@
           </figure>
         </li>
         <li>
-          <figure>
-            <img src="/assets/sprites/php.png" alt="Logo PHP" />
+          <figure class="card training__card">
+            <img
+              alt="Logo PHP"
+              class="training__logo"
+              src="/assets/sprites/php.png"
+            />
             <figcaption>
               <strong>PHP</strong> débutant et intermédiaire
             </figcaption>
           </figure>
         </li>
         <li>
-          <figure>
-            <img src="/assets/sprites/symfony.png" alt="Logo Symfony" />
+          <figure class="card training__card">
+            <img
+              alt="Logo Symfony"
+              class="training__logo"
+              src="/assets/sprites/symfony.png"
+            />
             <figcaption>
               <strong>Symfony</strong> 4+
             </figcaption>
           </figure>
         </li>
         <li>
-          <figure>
-            <img src="/assets/sprites/git.png" alt="Logo Git" />
+          <figure class="card training__card">
+            <img
+            alt="Logo Git"
+            class="training__logo"
+            src="/assets/sprites/git.png"
+            />
             <figcaption>
               Versionnage de projet avec <strong>Git</strong>
             </figcaption>
           </figure>
         </li>
         <li>
-          <figure>
-            <img src="/assets/sprites/jekyll.png" alt="Logo Jekyll" />
+          <figure class="card training__card">
+            <img
+              alt="Logo Jekyll"
+              class="training__logo"
+              src="/assets/sprites/jekyll.png"
+            />
             <figcaption>
               Génération de site statique avec <strong>Jekyll</strong>
             </figcaption>
@@ -110,14 +132,19 @@
       </p>
     </section>
     <section class="dev">
-      <h2>Mes réalisations clé</h2>
+      <h2 class="dev__title">Mes réalisations clé</h2>
       <ul class="dev__list">
         <li>
-          <figure>
-            <img alt="Aperçu Kurious" src="/assets/sprites/kurious.png" />
+          <figure class="card dev__card">
+            <img
+              alt="Aperçu Kurious"
+              class="dev__preview"
+              src="/assets/sprites/kurious.png"
+            />
             <figcaption>
               <h3>
-                Design et intégration d'une plateforme de création d'ateliers
+                Kurious : Design et intégration d'une plateforme de création
+                d'ateliers
               </h3>
               <ul>
                 <li>UI et design initial</li>
@@ -125,15 +152,19 @@
                 <li>Design d'une campagne de financement participatif</li>
                 <li>Intégration web sur un projet Django</li>
               </ul>
-              <span>🔒 Projet en beta fermée</span>
+              <p>🔒 Projet en beta fermée</p>
             </figcaption>
           </figure>
         </li>
         <li>
-          <figure>
-            <img alt="Aperçu DG-Server" src="/assets/sprites/dg-server.png" />
+          <figure class="card dev__card">
+            <img
+              alt="Aperçu DG-Server"
+              class="dev__preview"
+              src="/assets/sprites/dg-server.png"
+            />
             <figcaption>
-              <h3>Développement d'un ERP pour un intranet</h3>
+              <h3>DG-Server : développement d'un ERP pour un intranet</h3>
               <ul>
                 <li>Développement Symfony 3+</li>
                 <li>
@@ -143,18 +174,19 @@
                 <li>Maintenance de projet</li>
                 <li>Gestion d'équipe (5 à 10 développeurs)</li>
               </ul>
-              <span>🔒 Projet interne</span>
+              <p>🔒 Projet interne</p>
             </figcaption>
           </figure>
         </li>
         <li>
-          <figure>
+          <figure class="card dev__card">
             <img
               alt="Aperçu Clever cloud"
+              class="dev__preview"
               src="/assets/sprites/clever-cloud.png"
             />
             <figcaption>
-              <h3>Intégration d'une plateforme cloud SAAS</h3>
+              <h3>Clever cloud : intégration d'une plateforme cloud SAAS</h3>
               <ul>
                 <li>Intégration front-end incrémentale et modulaire</li>
                 <li>
@@ -163,7 +195,9 @@
                 </li>
                 <li>Génération de sites statiques Jekyll</li>
               </ul>
-              <a href="http://clever-cloud.com">Projet déployé depuis 2011</a>
+              <p>
+                <a href="http://clever-cloud.com">Projet déployé depuis 2011</a>
+              </p>
             </figcaption>
           </figure>
         </li>

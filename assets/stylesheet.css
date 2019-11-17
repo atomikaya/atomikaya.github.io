@@ -1,11 +1,77 @@
 @import 'normalize.css';
 @import 'fonts/stylesheet.css';
 
+/* vars */
+:root {
+  /* colors */
+  --light: #ecececff;
+  --strong: #6c00a5ff;
+  --shadow: rgba(0, 0, 0, .3);
+  /* layout */
+  --safe-zone: 2rem;
+}
+
+/* generic */
+a {
+  color: var(--strong);
+}
 body {
   font: 20px/1.2 'Quicksand', sans-serif;
 }
-
+  body > *:nth-child(odd) {
+    background: var(--light);
+  }
 h1, h2 {
   font-family: 'Caladea', serif;
   font-weight: normal;
+}
+
+/* components */
+.about, .contact, .dev, .training {
+  padding: 2rem var(--safe-zone);
+}
+  .about__name {
+    color: var(--strong);
+    margin-bottom: 0;
+  }
+  .about__function {
+    margin-top: 0;
+  }
+
+.card {
+  margin: 2rem 1rem 2rem 0;
+}
+
+.contact {
+  text-align: center;
+}
+
+.dev__card {
+  margin-bottom: 4rem;
+  /* width: 300px; */
+}
+.dev__list, .training__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+.dev__preview {
+  box-shadow: 5px 10px 0 var(--shadow);
+}
+.dev__title, .training__title {
+  color: var(--strong);
+}
+
+.training__card {
+  display: flex;
+  align-items: center;
+  /* width: 200px; */
+}
+
+.training__logo {
+  flex: 0 0 149px;
+  margin-right: 1rem;
+  width: 149px;
 }

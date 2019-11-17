@@ -1,0 +1,11 @@
+@import 'normalize.css';
+@import 'fonts/stylesheet.css';
+
+body {
+  font: 20px/1.2 'Quicksand', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Caladea', serif;
+  font-weight: normal;
+}
